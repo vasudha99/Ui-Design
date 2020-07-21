@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UI Design</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+   <!-- header start -->	
+   <header class="navbar navbar-expand-lg navbar-light site-navbar bg-white fixed-top">
+    <a class="navbar-brand navbar-logo" href="javascript:void(0)">
+        <img src="img/logo.png" alt="logo" width="95" height="30"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-menu" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-list hideon-sm">
+        <li class="nav-item active active-link">
+          <a class="nav-link font-weight-bold navigate-link" href="javascript:void(0)" title="Discuss">Discuss <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold navigate-link" href="javascript:void(0)"title="Browse">Browse</a>
+        </li>
+      </ul> 
+      <form class="form-inline mr-auto my-2 my-lg-0">
+        <div class="search-bar position-relative">
+          <input class="form-control mr-sm-2 border-0" type="search" placeholder="Search">
+          <i class="fa fa-search search-icon"></i>
+        </div>
+     </form>
+      <ul class="navbar-nav  mt-2 mt-lg-0 nav-list hideon-sm">
+        <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" title="profile">
+                <img src="img/icon-img.png" alt="Profile" width="40" height="38"class="rounded-circle"/>
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)" title="notification">
+              <span class="bell-icon position-relative"><i class="fa fa-bell-o"></i></span>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)" title="add new">
+                <button type="button" class="btn btn-primary btn-sm add-btn">
+                    New <span><i class="fa fa-plus"></i></span>
+                </button>
+            </a>
+          </li>
+      </ul>
+      <!-- small screen view -->
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-list hideon-lg">
+        <li class="nav-item active active-link">
+          <a class="nav-link font-weight-bold " href="javascript:void(0)" title="Discuss">Discuss <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold " href="javascript:void(0)"title="Browse">Browse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="javascript:void(0)" title="add new">
+            <span>New</span> <span class="badge badge-pill badge-primary nav-badge float-right">+</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="javascript:void(0)" title="notification">
+            <span>Notifications</span> <span class="badge badge-pill badge-primary nav-badge float-right">10</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="javascript:void(0)" title="profile">
+              <img src="img/icon-img.png" alt="Profile" width="40" height="38"class="rounded-circle"/>
+              <span class="mr-2">User@99</span>
+          </a>
+        </li>
+      </ul> 
+    </div>
+     <!-- small screen view -->
+  </header>
+	<!-- header end -->
+    <!-- sidebar start -->
+    <aside class="bg-white border-right sidebar-container" id="mySidenav">
+      <div class="list-group list-group-flush sidenav">
+        <a href="javascript:void(0)" class="list-group-item side-list" title="home">
+          <i class="fa fa-home"></i><span class="side-link">Home</span>
+        </a>
+        <a href="javascript:void(0)" class="list-group-item side-list active-navlink" title="Dashboard">
+          <i class="fa fa-sliders"></i><span class="side-link">Dashboard</span>
+        </a>
+        <a href="javascript:void(0)" class="list-group-item side-list" title="Pages">
+          <i class="fa fa-file-o"></i><span class="side-link">Pages</span>
+        </a>
+        <a href="javascript:void(0)" class="list-group-item side-list" title="Plugins">
+          <i class="fa fa-plug"></i><span class="side-link">Plugins</span><span class="badge badge-pill badge-primary custom-badge">18</span>
+        </a>  
+        <a href="javascript:void(0)" class="list-group-item side-list" title="Posts">
+          <i class="fa fa-home"></i><span class="side-link">Posts</span>
+        </a>  
+        <a href="javascript:void(0)" class="list-group-item side-list" title="Support Center">
+          <i class="fa fa-home"></i><span class="side-link">Support Center</span>
+        </a>  
+        <a href="javascript:void(0)" class="list-group-item side-list" title="Media">
+          <i class="fa fa-folder-o"></i><span class="side-link">Media</span>
+        </a>  
+        <a href="javascript:void(0)" class="list-group-item side-list" title="Appearance">
+          <i class="fa  fa-laptop"></i><span class="side-link">Appearance</span>
+        </a>  
+        <a href="javascript:void(0)" class="list-group-item side-list" title="Ecommerce">
+          <i class="fa fa-shopping-bag"></i><span class="side-link">Ecommerce</span>
+        </a>      
+      </div>
+    </aside>
+    <!-- sidebar end -->
+    <!-- main container start -->
+    <div class="main-body">
+      <div class="main-section" id="main">
+        <div class="sidenav-btn">
+          <button class="btn btn-primary" id="myBtn" title="Click here to open Sidebar"><i class="fa fa-cogs"></i></button>
+        </div>
+        <div class="view-section bg-white">
+          <ul class="inner-nav d-inline-block">
+            <li class="nav-item active active-link">
+              <a class="nav-link font-weight-bold navigate-link" href="javascript:void(0)" title="Overview">Overview <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold navigate-link" href="javascript:void(0)"title="Customization">Customization</a>
+            </li>
+          </ul>
+          <ul class="inner-nav float-right hideon-sm">
+            <li class="nav-item active">
+              <a class="nav-link" href="javascript:void(0)">
+                <span><i class="fa fa-bars li-icon"></i></span>
+              </a> 
+            </li>
+            <li class="nav-item active active-link">
+              <a class="nav-link" href="javascript:void(0)">
+                <span><i class="fa fa-th-large li-icon"></i></span>
+              </a> 
+            </li>
+          </ul>
+        </div>
+        <div class="chart-section">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="column-container column-1">
+                   <div class="col-icon float-right">
+                     <span><i class="fa fa-arrow-left"></i></span>
+                     <span><i class="fa fa-arrow-right"></i></span>
+                   </div>
+                   <div class="col-content">
+                    <div class="col-para text-white">
+                      <div class="title-text font-weight-bold">Your Recent Drafts</div>
+                     <div class="small-text text-secondary">#travel #uidesign</div>
+                     <div class="small-text font-weight-bold">Edit Now</div>
+                    </div>
+                   </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="column-container column-2">
+                   <div class="col-icon float-right">
+                     <span><i class="fa fa-share-alt"></i></span>
+                   </div>
+                   <div class="col-content">
+                    <div class="col-para bg-white">
+                      <div class=" title-text font-weight-bold">WordPress &amp; News</div>
+                      <div class="text-muted para-text">It is a long established fact that a reade at its layout.</div>
+                    </div>
+                   </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="column-container column-3 bg-white">
+                  <div class="heading-block">
+                    <div class="col-icon col-icon-2 float-right">
+                      <span class="bg-light"><i class="fa  fa-close"></i></span>
+                   </div> 
+                    <div class="heading-content d-inline-block float-left">
+                      <img src="img/icon-img.png" alt="Profile" width="40" height="38"class="rounded-circle"/>
+                      <div class="text-muted para-text d-inline-block">Drap and drop image, paste embded, enter text and link</div>
+                    </div>
+                  </div>
+                  <div class="field-content">
+                    <div class="field"></div>
+                    <div class="btn-section">
+                      <button type="button" class="btn btn-light text-muted btn-sm para-text">Cancel</button>
+                      <div class="upload-container float-right">
+                        <button type="button" class="btn btn-dark btn-sm add-btn">
+                          Upload <span><i class="fa fa-youtube-play"></i></span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-sm add-btn">
+                        Quick Drag <span><i class="fa fa-arrow-right"></i></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="column-container column-4 bg-white">
+                  <div class="heading-block">
+                    <div class="heading-col d-inline-block float-left">
+                      <div class="d-inline-block font-weight-bold col-heading">Analytics Block</div>
+                    </div>
+                     <div class="col-icon float-right col-icon-2">
+                       <span class="bg-light"><i class="fa fa-download"></i></span>
+                     </div>
+                  </div>
+                   <div class="col-content-2">
+                    <div class="custom-bar">
+                      <div class="progress progress-bar-vertical">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 30%;">
+                          <span class="sr-only">30% Complete</span>
+                        </div>
+                      </div>
+                      <div class="progress progress-bar-vertical">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 50%;">
+                          <span class="sr-only">50% Complete</span>
+                        </div>
+                      </div>
+                      <div class="progress progress-bar-vertical">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 10%;">
+                          <span class="sr-only">10% Complete</span>
+                        </div>
+                      </div>
+                      <div class="progress progress-bar-vertical">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 20%;">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>
+                      <div class="progress progress-bar-vertical">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 60%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                      </div>
+                      <div class="progress progress-bar-vertical">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 40%;">
+                          <span class="sr-only">40% Complete</span>
+                        </div>
+                      </div>
+                      <div class="progress progress-bar-vertical">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height: 40%;">
+                          <span class="sr-only">40% Complete</span>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="column-container column-6 bg-white">
+                  <div class="heading-block">
+                    <div class="heading-col d-inline-block float-left">
+                      <div class="d-inline-block font-weight-bold col-heading">100,053<i class="fa fa-arrow-down pl-2 text-danger"></i></div>
+                    </div>
+                     <div class="col-icon float-right col-icon-2">
+                       <span class="bg-light"><i class="fa fa-share-alt"></i></span>
+                     </div>
+                     <div class="hint-text text-muted para-text">Page View</div>
+                  </div>
+                   <div class="col-content-2">
+                    <canvas id="myChart" width="500" height="300"></canvas>
+                   </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="column-container column-5 bg-white">
+                  <div class="heading-block">
+                    <div class="heading-col d-inline-block float-left">
+                      <div class="d-inline-block font-weight-bold col-heading">180,053<i class="fa fa-arrow-down pl-2 text-success"></i></div>
+                    </div>
+                     <div class="col-icon float-right col-icon-2">
+                       <span class="bg-light"><i class="fa fa-share-alt"></i></span>
+                     </div>
+                     <div class="hint-text text-muted para-text">Page View</div>
+                  </div>
+                  <div class="col-content-2">
+                    <canvas id="myChart2" width="500" height="300"></canvas>
+                   </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="column-container column-7 bg-white">
+                  <div class="heading-block">
+                    <div class="heading-col d-inline-block float-left">
+                      <div class="d-inline-block font-weight-bold col-heading">New Media</i></div>
+                    </div>
+                     <div class="col-icon float-right col-icon-2">
+                       <span class="bg-light"><i class="fa fa-share-alt"></i></span>
+                     </div>
+                  </div>
+                   <div class="col-content-2">
+                      <div class="profile-content text-center">
+                        <img src="img/profile.jpg" alt="Profile picture" height="256" width="256" class="rounded-circle">
+                        <div class="small-text  font-weight-bold">Tommy Barnes</div>
+                        <div class="mini-text text-muted">2mins ago</div>
+                      </div>
+                      <div class="media-col">
+                        <ul class="media-list">
+                          <li><a href="javascript:void(0)" title="Add more"><span class="add-media"><i class="fa fa-plus text-white"></i></span></a></li>
+                          <li><a href="javascript:void(0)" title="media"><img src="img/icon1.jpg" alt="media" height="256" width="256" class="rounded"></a></li>
+                          <li><a href="javascript:void(0)" title="media"><img src="img/icon2.jpeg" alt="media" height="256" width="256" class="rounded"></a></li>
+                          <li><a href="javascript:void(0)" title="media"><img src="img/icon3.jpeg" alt="media" height="256" width="256" class="rounded"></a></li>
+                          <li><a href="javascript:void(0)" title="media"><img src="img/icon1.jpg" alt="media" height="256" width="256" class="rounded"></a></li>
+                          <li><a href="javascript:void(0)" title="media"><img src="img/icon2.jpeg" alt="media" height="256" width="256" class="rounded"></a></li>
+                          <li><a href="javascript:void(0)" title="media"><img src="img/icon3.jpeg" alt="media" height="256" width="256" class="rounded"></a></li>  
+                        </ul>
+                      </div>
+                   </div>
+                </div>
+              </div>
+            </div>  <!-- row ends -->
+            </div> <!-- container ends -->
+        </div>  
+        </div>
+      </div>
+    </div>   <!-- main container start -->
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
